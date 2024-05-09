@@ -1,3 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px;
+    padding: 0;
+}
+
+.header {
+    grid-area: header;
+    background-color: #53c91d;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+header .logo {
+    font-size: 30px;
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+header nav {
+    padding-top: 50px;
+}
+
+header nav ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-decoration: none;
+    list-style: none;
+    float: right;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #ffc170;
+    border: 0px solid rgb(221, 208, 208);
+    color: black;
+    transition: all 0.5s ease 0s;
+    border-radius: 50%;
+}
 .image-container{
     display: flex;
     justify-content: space-around;
@@ -52,3 +108,4 @@
     text-decoration: none;
     cursor: pointer;
 }
+
